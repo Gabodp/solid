@@ -1,16 +1,27 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package _3isp.bien;
 
-package _0srp.mal;
+import _3isp.mal.*;
+import java.util.LinkedList;
+import java.util.List;
+
+
+
 
 /**
  *
  * @author Palacios
  */
-
-public  class Pokemon {
+public abstract class Pokemon {
     private String nombre;
     private String tipo;
     private String habilidad;
-    private int porcentajeVida;
+    private double porcentajeVida;
+    private List<String> movimientos;
 
     public Pokemon() {
         
@@ -21,14 +32,10 @@ public  class Pokemon {
         this.tipo = tipo;
         this.habilidad = habilidad;
         this.porcentajeVida=100;
+        this.movimientos = new LinkedList<>();
     }
     
-    /* Esta no es una responsabilidad de un pokemon*/
-    public void curar(){
-        this.porcentajeVida=100;
-    }
-    
-    
+  
     public String getNombre() {
         return nombre;
     }
@@ -53,18 +60,25 @@ public  class Pokemon {
         this.habilidad = habilidad;
     }
 
-    public int getPorcentajeVida() {
+    public double getPorcentajeVida() {
         return porcentajeVida;
     }
 
-    public void setPorcentajeVida(int porcentajeVida) {
+    public void setPorcentajeVida(double porcentajeVida) {
         this.porcentajeVida = porcentajeVida;
     }
+
+    public List<String> getMovimientos() {
+        return movimientos;
+    }
+
+    public void setMovimientos(List<String> movimientos) {
+        this.movimientos = movimientos;
+    }
+
     
     
-    
-    
-    
+ 
     
     
 }

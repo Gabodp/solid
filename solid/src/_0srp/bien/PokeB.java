@@ -1,32 +1,34 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package _0srp.bien;
 
-package _0srp.mal;
 
 /**
  *
  * @author Palacios
  */
 
-public  class Pokemon {
+public  class PokeB {
     private String nombre;
     private String tipo;
     private String habilidad;
     private int porcentajeVida;
 
-    public Pokemon() {
+    public PokeB() {
         
     }
 
-    public Pokemon(String nombre, String tipo, String habilidad) {
+    public PokeB(String nombre, String tipo, String habilidad) {
         this.nombre = nombre;
         this.tipo = tipo;
         this.habilidad = habilidad;
         this.porcentajeVida=100;
     }
     
-    /* Esta no es una responsabilidad de un pokemon*/
-    public void curar(){
-        this.porcentajeVida=100;
-    }
+
     
     
     public String getNombre() {
